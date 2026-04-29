@@ -107,3 +107,15 @@
 .auto-3d {
   animation: floatRotate 6s ease-in-out infinite;
 }
+.perspective {
+  perspective: 1200px;
+}
+
+.auto-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+}
+
+.group:hover .auto-3d {
+  transform: rotateY(-8deg) rotateX(4deg) scale(1.03);
+}

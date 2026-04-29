@@ -2,48 +2,40 @@ import Image from "next/image";
 
 export default function Cta() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-visible">
       <div
         className="pointer-events-none absolute bottom-0 left-1/2 -z-10 -mb-24 ml-20 -translate-x-1/2"
         aria-hidden="true"
       >
         
       </div>
-      <div className="max-w6xl mx-auto px-4 sm:px-6">
-        <div className="bg-linear-to-r from-transparent via-gray-800/50 py-12 md:py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
+<div className="relative z-10 mx-auto -mt-1 mb-6 h-px w-full max-w-[1600px] bg-cyan-300/40 shadow-[0_0_10px_rgba(34,211,238,0.6)] translate-y-[2px]" />
             <h2
               className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,var(--color-gray-200),var(--color-indigo-200),var(--color-gray-50),var(--color-indigo-300),var(--color-gray-200))] bg-[length:200%_auto] bg-clip-text pb-8 font-nacelle text-3xl font-semibold text-transparent md:text-4xl"
               data-aos="fade-up"
             >
-              Join the content-first platform
+              Join with us
             </h2>
-            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <div data-aos="fade-up" data-aos-delay={400}>
-                <a
-                  className="btn group mb-4 w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                  href="#0"
-                >
-                  <span className="relative inline-flex items-center">
-                    Start Building
-                    <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
-                      -&gt;
-                    </span>
-                  </span>
-                </a>
-              </div>
-              <div data-aos="fade-up" data-aos-delay={600}>
-                <a
-                  className="btn relative w-full bg-linear-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_right,var(--color-gray-800),var(--color-gray-700),var(--color-gray-800))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-[length:100%_150%] sm:ml-4 sm:w-auto"
-                  href="#0"
-                >
-                  Schedule Demo
-                </a>
-              </div>
-            </div>
+            
+            
           </div>
         </div>
-      </div>
+        {/* FOOTER STRIP */}
+            <div className="mt-3 mb-10 flex flex-wrap justify-center items-center gap-3 text-xs text-gray-500">
+              <span>Firmware</span>
+              <span className="text-gray-700">•</span>
+              <span>Keys</span>
+              <span className="text-gray-700">•</span>
+              <span>Certificates</span>
+              <span className="text-gray-700">•</span>
+              <span>Data Streams</span>
+              <span className="text-gray-700">•</span>
+              <span>Servers</span>
+            </div>
+
+     
     </section>
   );
 }

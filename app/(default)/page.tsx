@@ -12,7 +12,7 @@ export default function Home() {
     <>
       
       <Hero />
-      <div className="-mt-3 mb-3 mx-auto h-px w-[1300px] bg-gray-800" />
+<div className="relative z-10 mx-auto -mt-1 mb-6 w-full max-w-[1300px] h-px bg-cyan-300/40 shadow-[0_0_10px_rgba(34,211,238,0.6)] translate-y-[2px]" />
       <Workflows />
       <Cta />
     </>

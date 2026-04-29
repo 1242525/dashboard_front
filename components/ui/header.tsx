@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Search } from "lucide-react";
+import { User } from "lucide-react";
 
 export default function Header() {
   return (
@@ -9,7 +10,7 @@ export default function Header() {
 
       {/* LEFT - LOGO */}
       <div className="text-xl font-bold tracking-wide">
-        ARUGUS
+        ARGOS
       </div>
 
       {/* CENTER - NAV */}
@@ -17,8 +18,9 @@ export default function Header() {
         <Link href="/" className="hover:text-white">Home</Link>
         <Link href="/products_introduce" className="hover:text-white">Products</Link>
         <Link href="/software" className="hover:text-white">Platform</Link>
-        <Link href="/solution" className="hover:text-white">Solutions</Link>
-        <Link href="/technology" className="hover:text-white">Technology</Link>
+                <Link href="/technology" className="hover:text-white">Technology</Link>
+        <Link href="/solution" className="hover:text-white">Customer Service</Link>
+
       </nav>
 
       {/* RIGHT - SEARCH + BUTTONS */}
@@ -45,21 +47,12 @@ export default function Header() {
           />
         </div>
 
-        {/* LOGIN */}
         <Link
-          href="/signin"
-          className="px-4 py-1 bg-gray-700 rounded hover:bg-gray-600 transition"
-        >
-          Login
-        </Link>
-
-        {/* SIGNUP */}
-        <Link
-          href="/signup"
-          className="px-4 py-1 bg-indigo-600 rounded hover:bg-indigo-500 transition"
-        >
-          Sign up
-        </Link>
+  href="/signin"
+  
+>
+  <User className="w-7 h-7 text-cyan-300" />
+</Link>
 
       </div>
 

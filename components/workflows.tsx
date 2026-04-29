@@ -70,8 +70,8 @@ export default function Workflows() {
                     </span>
                   </div>
                   <p className="text-white/100">
-                   고객 및 디바이스 데이터 관리<br /> 
-                   대규모 IoT 기기 상태 및 사용자 정보 통합 관리
+                    및 디바이스 데이터 관리<br /> 
+                   대규모 IoT 기기 상태 및 사용자 정보 통합고객 관리
                   </p>
                 </div>
               </div>
@@ -107,14 +107,17 @@ export default function Workflows() {
                   height={288}
                   alt="Workflow 02"
                 />
-                {/* Content */}
+  {/* Content */}
                 <div className="p-6">
                   <div className="mb-3">
-                    <span className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-xs font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-gray-700/.15),--theme(--color-gray-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60">
+                    <span className="btn-sm relative rounded-full bg-gray-800/40 px-2.5 py-0.5 text-s font-normal before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,--theme(--color-gray-700/.15),--theme(--color-gray-700/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] hover:bg-gray-800/60">
+                      <span className="bg-linear-to-r from-indigo-500 to-indigo-200 bg-clip-text text-transparent">
+                        Over-The-Air
+                      </span>
                     </span>
                   </div>
                   <p className="text-white/100">
-                    OTA 소프트웨어 자동 업데이트 시스템 <br />
+                     OTA 소프트웨어 자동 업데이트 시스템 <br />
                     전 세계 디바이스에 안정적인 펌웨어 배포
                   </p>
                 </div>
