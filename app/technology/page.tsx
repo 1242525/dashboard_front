@@ -102,11 +102,7 @@ export default function TechnologyPage() {
 
             </div>
 
-            
-
-          </div>
-        </div>
-        {/* FOOTER STRIP */}
+            {/* FOOTER STRIP */}
             <div className="mt-24 flex flex-wrap justify-center items-center gap-3 text-xs text-gray-500">
               <span>Firmware</span>
               <span className="text-gray-700">•</span>
@@ -118,6 +114,9 @@ export default function TechnologyPage() {
               <span className="text-gray-700">•</span>
               <span>Servers</span>
             </div>
+
+          </div>
+        </div>
 
       </div>
     </section>

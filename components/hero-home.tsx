@@ -61,7 +61,7 @@ export default function HeroHome() {
 
             {/* BUTTONS */}
             <div className="mt-10 flex gap-4">
-              <button className="px-6 py-3 bg-linear-to-t from-cyan-300 to-indigo-300 text-black rounded-lg">
+              <button className="px-6 py-3 bg-cyan-300 text-black rounded-lg">
                 Get Started
               </button>
 
