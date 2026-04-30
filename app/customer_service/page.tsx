@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation"; // 👈 추가
 
 const menu = [
-  "공지사항",
-  "자주 묻는 질문",
-  "1:1 문의",
-  "서비스 센터 찾기",
-  "제품 매뉴얼",
+  { name: "공지사항", path: "/notice" },
+  { name: "자주 묻는 질문", path: "customer_service" },
+  { name: "1:1 문의", path: "/personal_question" },
+  { name: "제품 매뉴얼", path: "/manual" },
 ];
 
 const faq = [
@@ -18,11 +18,12 @@ const faq = [
 
 export default function CustomerPage() {
   const [open, setOpen] = useState<number | null>(null);
+  const router = useRouter(); // 👈 추가
 
   return (
     <div className="min-h-screen bg-[#05070d] text-white">
 
-      {/* BACKGROUND GLOW (통일 핵심) */}
+      {/* BACKGROUND GLOW */}
       <div className="absolute inset-0 flex justify-center pointer-events-none">
         <div className="w-[900px] h-[900px] bg-cyan-500/10 blur-[160px] rounded-full" />
       </div>
@@ -41,15 +42,14 @@ export default function CustomerPage() {
 
         {/* SIDEBAR */}
         <aside className="w-64 border-r border-white/10 min-h-screen p-6 hidden md:block">
-        
-
           <ul className="space-y-4 text-sm text-gray-400">
             {menu.map((item, i) => (
               <li
                 key={i}
+                onClick={() => router.push(item.path)} // 👈 이동
                 className="hover:text-white cursor-pointer transition"
               >
-                {item}
+                {item.name} {/* 👈 수정 */}
               </li>
             ))}
           </ul>
@@ -58,14 +58,14 @@ export default function CustomerPage() {
         {/* MAIN */}
         <main className="flex-1 p-10">
 
-          {/* TOP TITLE (LG → ARGOS 스타일로 변경) */}
+          {/* TITLE */}
           <div className="mb-10">
             <div className="text-xs text-gray-500">
               Support / Help Center
             </div>
 
             <h1 className="text-3xl font-semibold mt-2 text-white">
-              1:1 문의 / FAQ
+              FAQ
             </h1>
 
             <p className="text-gray-400 text-sm mt-3 max-w-xl">
@@ -84,7 +84,6 @@ export default function CustomerPage() {
 
           {/* FAQ */}
           <div className="mt-10 border-t border-white/10">
-
             {faq.map((item, i) => (
               <div key={i} className="border-b border-white/10">
 
@@ -109,7 +108,6 @@ export default function CustomerPage() {
 
               </div>
             ))}
-
           </div>
 
         </main>

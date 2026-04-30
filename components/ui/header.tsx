@@ -16,9 +16,9 @@ export default function Header() {
       {/* CENTER - NAV */}
       <nav className="flex gap-8 text-gray-300">
         <Link href="/" className="hover:text-white">Home</Link>
-        <Link href="/products_introduce" className="hover:text-white">Products</Link>
+        <Link href="/product" className="hover:text-white">Products</Link>
                 <Link href="/technology" className="hover:text-white">Technology</Link>
-        <Link href="/customer" className="hover:text-white">Customer Service</Link>
+        <Link href="/customer_service" className="hover:text-white">Customer Service</Link>
 
       </nav>
 
