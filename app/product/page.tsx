@@ -14,9 +14,9 @@ const products = [
   {
     name: "ARGOS HD WebCam PREBX",
     code: "AR-ZT-2026",
-    colors: ["#111827"],
+    colors: ["#111827","#ffffff"],
     storage: ["512GB"],
-    image: "/images/product2.png",
+    image: "/images/box.png",
     tag: "NEW",
   },
   {
@@ -32,7 +32,7 @@ const products = [
     code: "AR-S6-2026",
     colors: ["#171717", "#9ca3af", "#ffffff"],
     storage: ["256GB", "512GB"],
-    image: "/images/product1.png",
+    image: "/images/product5.png",
     tag: "NEW",
   },
   {
@@ -40,7 +40,7 @@ const products = [
     code: "AR-ZT-2026",
     colors: ["#111827"],
     storage: ["512GB"],
-    image: "/images/product2.png",
+    image: "/images/product6.png",
     tag: "NEW",
   },
   {
@@ -48,7 +48,7 @@ const products = [
     code: "AR-ZF-2026",
     colors: ["#5c30cc", "#374151", "#9ca3af"],
     storage: ["256GB", "512GB", "1TB"],
-    image: "/images/product3.png",
+    image: "/images/product7.png",
     tag: "NEW"
   },
 ];
@@ -80,7 +80,7 @@ export default function ProductPage() {
         <div className="mb-12">
           <h1 className="text-3xl font-semibold">제품</h1>
           <p className="text-gray-400 mt-2">
-            ARGUS의 최신 제품을 확인하세요
+            ARGOS의 최신 제품을 확인하세요
           </p>
         </div>
 
